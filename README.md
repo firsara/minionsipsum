@@ -7,9 +7,9 @@ Thanks to Carlos Alberto Hernández (<a href="http://www.calberhs.com/">http://w
 ## Download
 
 you can download Minionsipsum Desktop Client at:
- * Mac OSX: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.osx.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.osx.x64.zip</a>
- * Windows: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.win.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.win.x64.zip</a>
- * Linux: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.linux.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.linux.x64.zip</a>
+ * Mac OSX: <a href="http://fabianirsara.com/examples/minionsipsum/bin/minionsipsum.osx.x64.zip">http://fabianirsara.com/examples/minionsipsum/bin/minionsipsum.osx.x64.zip</a>
+ * Windows: <a href="http://fabianirsara.com/examples/minionsipsum/bin/minionsipsum.win.x64.zip">http://fabianirsara.com/examples/minionsipsum/bin/minionsipsum.win.x64.zip</a>
+ * Linux: <a href="http://fabianirsara.com/examples/minionsipsum/bin/minionsipsum.linux.x64.zip">http://fabianirsara.com/examples/minionsipsum/bin/minionsipsum.linux.x64.zip</a>
 
 ## Development
 
