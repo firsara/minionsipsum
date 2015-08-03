@@ -1,15 +1,17 @@
 # Minionsipsum Desktop Client
 
 Adds a little Tray Icon to your desktop where you can pull minion ipsum data to your clipboard.
-connects to http://www.minionsipsum.com/ for fetching data.
-Thanks to Carlos Alberto Hernández for creating that funny service in the first place.
+connects to <a href="http://www.minionsipsum.com/">http://www.minionsipsum.com/</a> for fetching data.
+Thanks to Carlos Alberto Hernández (<a href="http://www.calberhs.com/">http://www.calberhs.com/</a>) for creating that funny service in the first place.
 
 ## Download
 
-you can download Minionsipsum Desktop Client at: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.osx.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.osx.x64.zip</a>
+you can download Minionsipsum Desktop Client at:
+ * Mac OSX: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.osx.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.osx.x64.zip</a>
+ * Windows: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.win.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.win.x64.zip</a>
+ * Linux: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.linux.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.linux.x64.zip</a>
 
-Currently only exported for OSX.
-Though you can build your own pretty easy by
+If you want you can build your own distribution easy by
 
  * cloning the repository
  * installing npm dependencies

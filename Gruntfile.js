@@ -49,7 +49,7 @@ module.exports = function(grunt){
     nwjs: {
       options: {
         cacheDir: 'cache/nwjs',
-        platforms: ['osx'],
+        platforms: ['osx', 'linux', 'win'],
         buildDir: './bin',
         version: 'latest',
         macIcns: 'src/public/assets/icon.icns',
@@ -58,6 +58,22 @@ module.exports = function(grunt){
       build: ['dist/package.json', 'dist/**']
     },
     compress: {
+      win64: {
+        options: {
+          archive: 'bin/tmp/<%= pkg.name %>.win.x64.zip'
+        },
+        files: [
+          {src: ['**'], cwd: 'bin/<%= pkg.name %>/win64', dest: '.', expand: true}
+        ]
+      },
+      linux64: {
+        options: {
+          archive: 'bin/tmp/<%= pkg.name %>.linux.x64.zip'
+        },
+        files: [
+          {src: ['**'], cwd: 'bin/<%= pkg.name %>/linux64', dest: '.', expand: true}
+        ]
+      },
       osx64: {
         options: {
           archive: 'bin/tmp/<%= pkg.name %>.osx.x64.zip'
@@ -65,7 +81,7 @@ module.exports = function(grunt){
         files: [
           {src: ['**'], cwd: 'bin/<%= pkg.name %>/osx64', dest: '.', expand: true}
         ]
-      }
+      },
     },
     'ftp-deploy': {
       bin: {
