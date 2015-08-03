@@ -11,7 +11,9 @@ you can download Minionsipsum Desktop Client at:
  * Windows: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.win.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.win.x64.zip</a>
  * Linux: <a href="http://fabianirsara.com/examples/minionipsum/bin/minionipsum.linux.x64.zip">http://fabianirsara.com/examples/minionipsum/bin/minionipsum.linux.x64.zip</a>
 
-If you want you can build your own distribution easy by
+## Development
+
+If you want you can build your own distribution easily by
 
  * cloning the repository
  * installing npm dependencies
@@ -28,4 +30,5 @@ grunt
 
 ## Contributing
 
-please fork and create your own feature-branch, before commiting and creating pull requests. I will do my best to include your changes.
+please fork and create your own feature-branch, before commiting and creating pull requests.
+I will do my best to include your changes.
