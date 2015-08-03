@@ -1,7 +1,7 @@
 # Minionsipsum Desktop Client
 
 connects to http://www.minionsipsum.com/ for fetching data.
-
+Thanks to Carlos Alberto Hernández for creating that funny service in the first place.
 
 ## Download
 
@@ -17,3 +17,7 @@ Currently only exported for OSX. Though you can build your own pretty easy by
     npm install
     bower install
     grunt
+
+## Contributing
+
+please fork and create your own feature-branch, before commiting and creating pull requests. I will do my best to include your changes.
