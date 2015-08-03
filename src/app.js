@@ -17,7 +17,7 @@ function notify(text, icon){
   var options = {
     icon: icon,
     body: text
-   };
+  };
 
   var notification = new Notification(gui.App.manifest.name, options);
 
@@ -131,16 +131,15 @@ function fetchData(){
     });
   }
 
+  clipboard.set(content, 'text');
+
+  notify('copied to clipboard', asLatin ? 'public/assets/minion-roman.png' : 'public/assets/minion.png');
 
   var soundIndex = Math.floor(Math.random() * sounds.length);
   var sound = 'public/sounds/' + sounds[soundIndex];
   var audio = new Audio(sound);
   audio.volume = 1;
   audio.play();
-
-  clipboard.set(content, 'text');
-
-  notify('copied to clipboard', asLatin ? 'public/assets/minion-roman.png' : 'public/assets/minion.png');
 }
 
 
