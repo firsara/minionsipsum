@@ -1,0 +1,44 @@
+{
+  "name": "minionsipsum",
+  "version": "1.0.0",
+  "description": "Minionsipsum Desktop Client to fetch data from http://www.minionsipsum.com/",
+  "main": "src/index.html",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://firsara@github.com/firsara/minionsipsum.git"
+  },
+  "keywords": [
+    "desktop",
+    "nwjs",
+    "node",
+    "javascript"
+  ],
+  "author": "Fabian Irsara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firsara/minionsipsum/issues"
+  },
+  "homepage": "https://github.com/firsara/minionsipsum#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.3.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-ftp-deploy": "^0.1.10",
+    "grunt-nw-builder": "^2.0.0"
+  },
+  "window": {
+    "transparent": true,
+    "toolbar": false,
+    "frame": false,
+    "icon": "src/public/assets/icon.png"
+  },
+  "debug": true
+}

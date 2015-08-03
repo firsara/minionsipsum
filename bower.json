@@ -1,0 +1,27 @@
+{
+  "name": "minionsipsum",
+  "version": "1.0.0",
+  "authors": [
+    "Fabian Irsara <info@fabianirsara.com>"
+  ],
+  "description": "Minionsipsum Desktop Client to fetch data from http://www.minionsipsum.com/",
+  "main": "src/index.html",
+  "keywords": [
+    "desktop",
+    "nwjs",
+    "node",
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "http://fabianirsara.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
