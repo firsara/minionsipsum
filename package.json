@@ -38,7 +38,8 @@
     "transparent": true,
     "toolbar": false,
     "frame": false,
-    "icon": "src/public/assets/icon.png"
+    "icon": "src/public/assets/icon.png",
+    "show_in_taskbar": false
   },
   "debug": true
 }
