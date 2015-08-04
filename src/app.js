@@ -1,3 +1,6 @@
+var platform = process.platform;
+platform = /^win/.test(platform)? 'win' : /^darwin/.test(platform)? 'mac' : 'linux' + (process.arch == 'ia32' ? '32' : '64');
+
 var gui = require('nw.gui');
 var win = gui.Window.get();
 var clipboard = gui.Clipboard.get();
@@ -10,7 +13,7 @@ if (gui.App.manifest.debug) {
 
 win.hide();
 
-var iframe, tray, menu, menuItemLatin, menuItemHTML, menuItemParagraphs = [], asHTML = false, asLatin = false;
+var iframe, tray, menu, menuItemLatin, menuItemHTML, menuItemParagraphs = [], asHTML = false, asLatin = false, shortcut;
 var sounds = ['sound1.ogg', 'sound2.ogg', 'sound3.ogg', 'sound4.ogg', 'sound5.ogg'];
 
 function notify(text, icon){
@@ -59,12 +62,12 @@ function checkReady(){
     menu.append(submenuItemParagraphs);
 
 
-    var menuItem = new gui.MenuItem({icon: base + 'public/assets/minion-small.png', type: 'normal', label: 'Bananaaa!!'});
+    var menuItem = new gui.MenuItem({icon: base + 'public/assets/minion-small.png', type: 'normal', label: 'Bananaaa!! ' + (platform === 'mac' ? '(cmd+shift+m)' : '(ctrl+shift+m)')});
     menuItem.on('click', getDefault);
     menu.append(menuItem);
 
     menuItemLatin = new gui.MenuItem({icon: base + 'public/assets/minion-roman-small.png', type: 'normal', label: 'Gimme Latin!!'});
-    menuItemLatin.on('click', toggleLatin);
+    menuItemLatin.on('click', getLatin);
     menu.append(menuItemLatin);
 
     var menuItem = new gui.MenuItem({type: 'separator'});
@@ -75,6 +78,11 @@ function checkReady(){
     menu.append(menuItemHTML);
 
     tray.menu = menu;
+
+
+    shortcut = new gui.Shortcut({key: 'Ctrl+Shift+M'});
+    gui.App.registerGlobalHotKey(shortcut);
+    shortcut.on('active', getDefault);
   } else {
     setTimeout(checkReady, 50);
   }
@@ -99,7 +107,7 @@ function toggleHTML(event){
   asHTML = menuItemHTML.checked;
 }
 
-function toggleLatin(){
+function getLatin(){
   asLatin = true;
   fetchData();
 }
@@ -141,6 +149,7 @@ function fetchData(){
   audio.volume = 1;
   audio.play();
 }
+
 
 
 $(document).ready(function(){
