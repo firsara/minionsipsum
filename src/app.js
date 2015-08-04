@@ -77,6 +77,13 @@ function checkReady(){
     menuItemHTML.on('click', toggleHTML);
     menu.append(menuItemHTML);
 
+    var menuItem = new gui.MenuItem({type: 'separator'});
+    menu.append(menuItem);
+
+    menuItemHTML = new gui.MenuItem({type: 'normal', label: 'Quit'});
+    menuItemHTML.on('click', gui.App.quit);
+    menu.append(menuItemHTML);
+
     tray.menu = menu;
 
 
