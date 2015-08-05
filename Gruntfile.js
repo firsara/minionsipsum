@@ -48,7 +48,7 @@ module.exports = function(grunt){
     },
     nwjs: {
       options: {
-        cacheDir: 'cache/nwjs',
+        cacheDir: (process.env.HOME || process.env.USERPROFILE) + '/cache/nwjs',
         platforms: ['osx', 'linux', 'win'],
         buildDir: './bin',
         version: 'latest',

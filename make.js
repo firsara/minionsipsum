@@ -1,16 +1,16 @@
 var tasks = {
   run: function(){
     if (platform === 'mac') {
-      execute('./cache/nwjs/0.12.3/osx64/nwjs.app/Contents/MacOS/nwjs .');
+      execute((process.env.HOME || process.env.USERPROFILE) + '/cache/nwjs/0.12.3/osx64/nwjs.app/Contents/MacOS/nwjs .');
     } else if (platform === 'win') {
-      execute('"cache/nwjs/0.12.3/win64/nw.exe" .');
+      execute('"' + (process.env.HOME || process.env.USERPROFILE) + '/cache/nwjs/0.12.3/win64/nw.exe" .');
     }
   },
   debug: function(){
     if (platform === 'mac') {
-      execute('./cache/nwjs/0.12.3/osx64/nwjs.app/Contents/MacOS/nwjs --enable-logging  --remote-debugging-port=9222 .');
+      execute((process.env.HOME || process.env.USERPROFILE) + '/cache/nwjs/0.12.3/osx64/nwjs.app/Contents/MacOS/nwjs --enable-logging  --remote-debugging-port=9222 .');
     } else if (platform === 'win') {
-      execute('"cache/nwjs/0.12.3/win64/nw.exe" --enable-logging  --remote-debugging-port=9222 .');
+      execute('"' + (process.env.HOME || process.env.USERPROFILE) + '/cache/nwjs/0.12.3/win64/nw.exe" --enable-logging  --remote-debugging-port=9222 .');
     }
   },
 };
