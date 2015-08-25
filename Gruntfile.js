@@ -53,7 +53,10 @@ module.exports = function(grunt){
         buildDir: './bin',
         version: 'latest',
         macIcns: 'src/public/assets/icon.icns',
-        macZip: false
+        macZip: false,
+        macPlist: {
+          CFBundleIdentifier: 'com.firsara.minionsipsum'
+        }
       },
       build: ['dist/package.json', 'dist/**']
     },
